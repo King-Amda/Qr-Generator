@@ -15,7 +15,7 @@
         <h1 class="text-center text-5xl font-bold my-7"> QR Code Generator. Made By <a href="https://t.me/ImSaantha">@KingAmda</a></h1>
         <form>
                 <div>
-                    <input id="username" type="text" class="placeholder-gray-700 placeholder-text-bold mt-5 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded py-2 px-4 block focus:border-gray-800 dark:focus:border-gray-900 focus:outline-none focus:ring mx-auto w-11/12 md:w-9/12 lg:w-9/12" placeholder="Type or paste to generate..."
+                    <input id="username" type="text" class="placeholder-gray-700 placeholder-text-bold mt-5 bg-white dark:bg-gray-800 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded py-2 px-4 block focus:border-gray-800 dark:focus:border-gray-900 focus:outline-none focus:ring mx-auto w-11/12 md:w-9/12 lg:w-9/12" placeholder="Type or paste to generate ..."
                     v-model="text">
                 </div>
         </form>
@@ -23,7 +23,7 @@
         <div v-if="text" class="output mt-5">
             <img :src="newQRCode" class="mx-auto" alt="QRCode">
             <div class="text-center mt-5">
-                <a class="py-2 px-4 capitalize tracking-wide bg-gray-900 text-white font-medium rounded hover:bg-gray-700 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-700" :href="newQRCode" download>Download QRCode</a>
+                <a class="py-2 px-4 capitalize tracking-wide bg-gray-900 text-white font-medium rounded hover:bg-gray-700 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-700" :href="newQRCode" download>Download Your QR Code</a>
             </div>
         </div>
         
